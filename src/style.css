@@ -1,0 +1,44 @@
+body {
+
+    --bg-dark: #4d4d4d;
+    --bg-light: #f2f2f2;
+    --bg-col: var(--bg-dark);
+    background-color: var(--bg-col);
+
+    --width: 66%;
+    max-width: var(--width);
+    margin-left: calc((100% - var(--width)) / 2);
+
+    font-family: monospace;
+    font-size: large;
+
+    @media screen and (max-width: 450px) {
+        /* Mobile resolution */
+        --mobile: true;
+        --width: 90%
+    }
+
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    
+    padding: 0;
+    list-style: none;
+
+    gap: 1em;
+
+    height: fit-content;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: inherit;
+}
