@@ -8,6 +8,7 @@ rm -rf build    # DEBUG
 mkdir -p build
 mkdir -p build/temp
 
+cp src/index.html build/
 cp src/*.css build/
 cp src/template.html build/temp/
 
