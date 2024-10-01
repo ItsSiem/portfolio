@@ -27,23 +27,24 @@ body {
     color: var(--color-text);
 
     --width: 66%;
-    max-width: var(--width);
+    width: var(--width);
     margin-left: calc((100% - var(--width)) / 2);
 
     font-family: monospace;
     font-size: x-large;
 
-    @media screen and (max-width: 720px) {
+    --header-flex-d: row;
+    @media screen and (max-width: 800px) {
         /* Mobile resolution */
-        --mobile: true;
-        --width: 90%
+        --width: 90%;
+        --header-flex-d: column-reverse;
     }
 
 }
 
 #header {
     display: flex;
-    flex-direction: row;
+    flex-direction: var(--header-flex-d);
     justify-content: space-between;
 }
 
@@ -57,6 +58,7 @@ body {
     flex-direction: row;
     
     padding: 0;
+    margin: 0;
     list-style: none;
 
     gap: 1em;
@@ -72,4 +74,10 @@ body {
 a {
     text-decoration: none;
     color: var(--color-rose);
+}
+
+#center-navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
