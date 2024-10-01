@@ -1,18 +1,39 @@
-body {
+:root {
+    /* Colors from the rose pine color pallete */
+    --color-hightlight-medium-dark: #44415a;
+    --color-hightlight-medium-light: #dfdad9;
+    --color-hightlight-medium: var(--color-hightlight-medium-dark);
 
-    --bg-dark: #4d4d4d;
-    --bg-light: #f2f2f2;
-    --bg-col: var(--bg-dark);
-    background-color: var(--bg-col);
+    --color-highlight-high-dark: #56526e;
+    --color-highlight-high-light: #cecacd;
+    --color-highlight-high: var(--color-highlight-high-dark);
+
+    --color-base-dark: #191724;
+    --color-base-light: #faf4ed;
+    --color-base: var(--color-base-dark);
+
+    --color-text-dark: #e0def4;
+    --color-text-light: #575279;
+    --color-text: var(--color-text-dark);
+
+    --color-rose-dark: #ea9a97;
+    --color-rose-light: #d7827e;
+    --color-rose: var(--color-rose-dark);
+}
+
+body {
+    background-color: var(--color-base);
+
+    color: var(--color-text);
 
     --width: 66%;
     max-width: var(--width);
     margin-left: calc((100% - var(--width)) / 2);
 
     font-family: monospace;
-    font-size: large;
+    font-size: x-large;
 
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 720px) {
         /* Mobile resolution */
         --mobile: true;
         --width: 90%
@@ -24,6 +45,11 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+#header a {
+    text-decoration: none;
+    color: var(--color-highlight-high);
 }
 
 #navbar {
@@ -39,6 +65,11 @@ body {
 }
 
 #navbar a {
+    text-decoration: underline;
+    color: var(--color-hightlight-medium);
+}
+
+a {
     text-decoration: none;
-    color: inherit;
+    color: var(--color-rose);
 }

@@ -34,6 +34,7 @@ for filename in content/*; do
         pandoc build/temp/blog_title.md >> build/temp/pandoc_out.html
         date -r "$file" +"%Y_%m_%d %H:%M">> build/temp/pandoc_out.html
         pandoc "$file" >> build/temp/pandoc_out.html
+        echo "<hr/>" >> build/temp/pandoc_out.html
     done
 elif [[ $filename == *.md ]]; then
     echo "parsing $filename..."
