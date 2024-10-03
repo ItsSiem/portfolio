@@ -38,7 +38,7 @@ body {
     @media screen and (max-width: 800px) {
         /* Mobile resolution */
         --width: 90%;
-        --header-flex-d: column-reverse;
+        --header-flex-d: column;
     }
 
 }
@@ -82,7 +82,6 @@ a {
     flex-direction: column;
     justify-content: center;
 }
-
 
 #style-button {
     border: none;
