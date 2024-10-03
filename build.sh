@@ -15,7 +15,7 @@ cp src/template.html build/temp/
 tac content/navbar | while read line; do
 echo $line
 header_line=$(grep -n "id=\"navbar\"" "build/temp/template.html" | cut -d: -f1)
-html="<li><a href=\"$line.html\">$line</a></li>"
+html="<li><a href=\"$line\">$line</a></li>"
 sed -i "$header_line a $html" "build/temp/template.html"
 done
 
