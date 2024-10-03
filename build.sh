@@ -30,7 +30,9 @@ for filename in content/*; do
         find "$filename" -name '*.md' -printf '%T@ %p\n' | sort -r | cut -d' ' -f2- | while read -r file
     do
         echo "parsing $file..."
-        echo "# $(basename -- "$file" .md)" > build/temp/blog_title.md
+        post_name=$(basename -- "$file" .md)
+        identifier=$(echo $post_name | tr '[:upper:]' '[:lower:]' | tr ' ' '-')
+        echo "# [$post_name](#$identifier)" > build/temp/blog_title.md
         pandoc build/temp/blog_title.md >> build/temp/pandoc_out.html
         date -r "$file" +"%Y_%m_%d %H:%M">> build/temp/pandoc_out.html
         pandoc "$file" >> build/temp/pandoc_out.html
