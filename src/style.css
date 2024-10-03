@@ -1,11 +1,11 @@
 :root {
     /* Colors from the rose pine color pallete */
-    --color-hightlight-medium-dark: #44415a;
-    --color-hightlight-medium-light: #dfdad9;
-    --color-hightlight-medium: var(--color-hightlight-medium-dark);
+    --color-highlight-medium-dark: #44415a;
+    --color-highlight-medium-light: #9893a5;
+    --color-highlight-medium: var(--color-highlight-medium-dark);
 
     --color-highlight-high-dark: #56526e;
-    --color-highlight-high-light: #cecacd;
+    --color-highlight-high-light: #797593;
     --color-highlight-high: var(--color-highlight-high-dark);
 
     --color-base-dark: #191724;
@@ -69,7 +69,7 @@ body {
 
 #navbar a {
     text-decoration: underline;
-    color: var(--color-hightlight-medium);
+    color: var(--color-highlight-medium);
 }
 
 a {
@@ -88,5 +88,6 @@ a {
     background-color: transparent;
     color: inherit;
     font-size: inherit;
+    font-family: inherit;
     cursor: pointer;
 }

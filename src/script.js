@@ -14,8 +14,8 @@ function toggleStyle() {
         return
     }
 
-    root.style.setProperty('--color-highdark-medium', 'var(--color-highdark-medium-dark)')
-    root.style.setProperty('--color-highdark-high', 'var(--color-highdark-high-dark)')
+    root.style.setProperty('--color-highlight-medium', 'var(--color-highlight-medium-dark)')
+    root.style.setProperty('--color-highlight-high', 'var(--color-highlight-high-dark)')
     root.style.setProperty('--color-base', 'var(--color-base-dark)')
     root.style.setProperty('--color-text', 'var(--color-text-dark)')
     root.style.setProperty('--color-rose', 'var(--color-rose-dark)')
