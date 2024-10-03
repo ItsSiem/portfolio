@@ -34,6 +34,7 @@ body {
     font-size: x-large;
 
     --header-flex-d: row;
+
     @media screen and (max-width: 800px) {
         /* Mobile resolution */
         --width: 90%;
@@ -56,7 +57,7 @@ body {
 #navbar {
     display: flex;
     flex-direction: row;
-    
+
     padding: 0;
     margin: 0;
     list-style: none;
@@ -80,4 +81,13 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+
+#style-button {
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    font-size: inherit;
+    cursor: pointer;
 }

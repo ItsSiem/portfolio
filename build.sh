@@ -8,8 +8,8 @@ rm -rf build    # DEBUG
 mkdir -p build
 mkdir -p build/temp
 
-cp src/index.html build/
-cp src/*.css build/
+cp src/* build/
+rm build/template.html
 cp src/template.html build/temp/
 
 tac content/navbar | while read line; do

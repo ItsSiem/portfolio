@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <title>itssiem</title>
-        <!-- Todo: SEO stuff -->
-        <script defer data-domain="itssiem.nl" src="https://plausible.siemgerritsen.nl/js/script.js"></script>
-    </head>
-    <body>
-        <div id="header">
-            <!-- Logo?, Name, Navbar, Dark/Light -->
-            <a href="./home">
-                <h1>itssiem</h1>
-            </a>
-            <div id="center-navbar">
-                <ul id="navbar">
-                    <!-- Put the pages that need to be in the navbar here -->
-                </ul>
-            </div>
-        </div>
-        <div id="content">
-        </div>
-        <div id="footer">
-            <!-- Github, Linkedin -->
-        </div>
-    </body>
-</html>
 
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>itssiem</title>
+    <!-- Todo: SEO stuff -->
+    <script defer data-domain="itssiem.nl" src="https://plausible.siemgerritsen.nl/js/script.js"></script>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <!-- Logo?, Name, Navbar, Dark/Light -->
+        <a href="./home">
+            <h1>itssiem</h1>
+        </a>
+        <div id="center-navbar">
+            <ul id="navbar">
+                <!-- Put the pages that need to be in the navbar here -->
+                <button onClick="toggleStyle()" id="style-button">
+                    ☼
+                </button>
+            </ul>
+        </div>
+    </div>
+    <div id="content">
+    </div>
+    <div id="footer">
+        <!-- Github, Linkedin -->
+    </div>
+</body>
+
+</html>
