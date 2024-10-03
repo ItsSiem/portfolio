@@ -28,7 +28,7 @@ body {
 
     --width: 66%;
     width: var(--width);
-    margin-left: calc((100% - var(--width)) / 2);
+    margin: auto;
 
     font-family: monospace;
     font-size: x-large;
