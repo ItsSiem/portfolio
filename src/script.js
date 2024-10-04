@@ -1,15 +1,25 @@
 const root = document.querySelector(':root')
-let currentStyle = "DARK"
 const styleBtn = document.querySelector('#style-button')
 
+if (localStorage.getItem("style") == null) {
+    localStorage.setItem("style", "DARK")
+}
+
+setStyle(localStorage.getItem("style"))
+
 function toggleStyle() {
-    if (currentStyle === "DARK") {
+    let style = localStorage.getItem("style") == "DARK" ? "LIGHT" : "DARK"
+    setStyle(style)
+}
+
+function setStyle(style) {
+    localStorage.setItem("style", style)
+    if (style == "LIGHT") {
         root.style.setProperty('--color-highlight-medium', 'var(--color-highlight-medium-light)')
         root.style.setProperty('--color-highlight-high', 'var(--color-highlight-high-light)')
         root.style.setProperty('--color-base', 'var(--color-base-light)')
         root.style.setProperty('--color-text', 'var(--color-text-light)')
         root.style.setProperty('--color-rose', 'var(--color-rose-light)')
-        currentStyle = "LIGHT"
         styleBtn.innerText = '◐'
         return
     }
@@ -19,6 +29,5 @@ function toggleStyle() {
     root.style.setProperty('--color-base', 'var(--color-base-dark)')
     root.style.setProperty('--color-text', 'var(--color-text-dark)')
     root.style.setProperty('--color-rose', 'var(--color-rose-dark)')
-    currentStyle = "DARK"
     styleBtn.innerText = '☼'
 }
