@@ -1,4 +1,5 @@
 I’m Siem; on the internet, I most commonly assume the name *itssiem*.  
+
 I’m a software developer and hobbyist in all things IT. During the waking 
 hours of the day, I study [software engineering](https://www.windesheim.nl/opleidingen/voltijd/bachelor/hbo-ict-software-engineering-almere-en-zwolle) 
 at [Windesheim University of Applied Science](https://windesheim.nl). When I’m 
@@ -17,3 +18,7 @@ As part of my HBO Bachelor at Windesheim, I’m following a pre-master program
 at the [University of Twente](https://utwente.nl). This program prepares me 
 for the master's in computer science I wish to follow in the coming years.
 
+---
+
+Check out my [LinkedIn](https://www.linkedin.com/in/siem-gerritsen/) or my 
+[GitHub](https://github.com/itssiem).
